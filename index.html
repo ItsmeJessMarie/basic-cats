@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torties 😼</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 8px;
+      }
+      h2 {
+        padding: 5px 0;
+        font-size: 26px;
+      }
+      hr {
+        border-style: inset;
+        border-width: 1px;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        border-radius: 8px;
+        width: 400px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 24px;
+      }
+      a {
+        font-size: smaller;
+        color: #ffffff;
+      }
+      button {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #ffffff;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 30px auto;
+        display: block;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        transition: all 150ms ease;
+        border-radius: 6px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        margin: 30px auto;
+      }
+      button:hover {
+        background-color: #2d015a;
+      }
+      div {
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        display: block;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 10px;
+        width: 50%;
+        color: #ffffff;
+        background: linear-gradient(
+          109.6deg,
+          rgb(43, 1, 91) 13.4%,
+          rgb(122, 2, 54) 100.2%
+        );
+      }
+      .suki-description {
+        text-align: center;
+        display: block;
+        font-size: small;
+        padding: 8px 0 0 0;
+      }
+      .my-name {
+        font-size: 12px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="final-project">
+      <h1>I Love Cats🐈‍⬛</h1>
+      <h2>Especially Tortoiseshells</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/412/original/Suki.edited.jpg?1680719599"
+        alt=""
+      />
+      <span class="suki-description"><em>My Tortie named Suki.</em></span>
+      <hr />
+      <p>
+        <strong>Tortoiseshell</strong> is a cat coat coloring named for its
+        similarity to tortoiseshell material. Like calicoes, tortoiseshell cats
+        are almost exclusively female. Male tortoiseshells are rare and are
+        usually sterile. Tortoiseshell cats, or torties, combine two colors
+        other than white, either closely mixed or in larger patches.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Tortoiseshell_cat" target="_blank"
+        >Read on Wikipedia</a
+      >
+      <br />
+      <button>Click for more!</button>
+      <br />
+      <span class="my-name">Built by Jessica Boll ❤️</span>
+    </div>
+    <script>
+      function loveCats() {
+        let name = prompt("What is your name?");
+        let cats = prompt("Do you love cats?");
+        cats = cats.toLowerCase().trim();
+        if (cats === "yes") {
+          alert(
+            "Yay! " +
+              name +
+              ", please visit your local shelter to see some cats 😻"
+          );
+        } else {
+          alert("Why not " + name + "? Cats are awesome 😸");
+        }
+      }
+      let catButton = document.querySelector("button");
+      catButton.addEventListener("click", loveCats);
+    </script>
+  </body>
+</html>
